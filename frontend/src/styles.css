@@ -1,0 +1,23 @@
+:root { --bg:#0b1020; --card:#121a33; --line:#25305a; --text:#e6ebff; --accent:#00d4ff; --good:#3ddc84; --bad:#ff5c5c; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family: system-ui, sans-serif; }
+.app, .challenge { max-width:1200px; margin:0 auto; padding:16px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.logo { cursor:pointer; font-size:20px; } .accent { color:var(--accent); }
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:16px; } @media (max-width:850px){ .cols{grid-template-columns:1fr;} }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin:10px 0; }
+.auth { max-width:360px; margin:80px auto; display:flex; flex-direction:column; gap:10px; }
+.result { max-width:700px; margin:40px auto; text-align:center; }
+.game { width:100%; border-radius:10px; border:1px solid var(--line); }
+button { background:#1c2750; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 14px; cursor:pointer; }
+button:disabled { opacity:.45; cursor:not-allowed; }
+button.primary { background:#2563ff; border-color:#2563ff; } button.big { margin-top:12px; padding:12px 24px; font-size:16px; }
+button.ghost { background:transparent; }
+input, select, textarea { background:#0d1430; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px; width:100%; }
+select { width:auto; } .row { display:flex; gap:8px; margin:10px 0; flex-wrap:wrap; }
+pre { background:#0d1430; padding:8px; border-radius:6px; overflow:auto; white-space:pre-wrap; }
+.topbar { display:flex; gap:10px; align-items:center; margin-bottom:8px; } .timer { margin-left:auto; font-size:20px; font-weight:bold; } .timer.danger { color:var(--bad); }
+.badge { background:#1c2750; padding:4px 10px; border-radius:6px; }
+.good { color:var(--good); } .bad { color:var(--bad); } .muted { color:#8d98c4; }
+.hint { background:#2a2440; border-left:3px solid #ffd23f; padding:8px; margin-top:8px; border-radius:4px; }
+.probs { font-size: 13px; margin-top: 6px; } .prob { cursor: pointer; padding: 2px 0; } .warn { color: #e0a800; }
